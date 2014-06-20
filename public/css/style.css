@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font: 18px Tahoma;
+    background-color: #e1e1e1;
+    padding: 20px 0px;
+    width: 99%;
+}
+
+#container{
+    width: 65%;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 20px;
+    min-height: 175px;
+}
+
+#container_login{
+    width: 65%;
+    max-width: 310px;
+    background: white;
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.login_wrapper{
+    margin: 0px 40px;
+    width: 230px;
+    margin: 0px auto;
+}
+
+#container_login input{
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 5px 10px;
+}
+
+#container_login input[type='text']:focus, 
+#container_login input[type='password']:focus{
+    box-shadow: 0px 0px 4px 4px #ed9945;
+
+}
+
+#container_login input[type='submit']{
+    margin-bottom: 15px;
+    width: 226px;
+    padding: 5px 10px;
+    font-family: courier, "courier new", monospace;
+    font-weight: bold;
+
+
+}
+
+#navigation{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;    
+
+    background: #aaaaaa; /* Old browsers */
+    background: -moz-linear-gradient(top, #aaaaaa 0%, #606060 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aaaaaa), color-stop(100%,#606060)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #aaaaaa 0%,#606060 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #aaaaaa 0%,#606060 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #aaaaaa 0%,#606060 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #aaaaaa 0%,#606060 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#606060',GradientType=0 ); /* IE6-9 */
+}
+
+#navigation nav ul{
+    list-style: none;
+    float: right;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+#navigation nav ul li{
+    display: inline;
+    margin-left: 6px;
+}
+
+a.nav_link{
+    text-decoration: none;
+}
+
+a.nav_link:link, a.nav_link:visited{
+    color: #e1e1e1;
+}
+
+a.nav_link:hover{
+    color: #ed9945;
+    text-decoration: underline;
+}
+
+.sign_up_success{
+    font-weight: bold;
+    font-family: Georgia Serif;
+    font-size: 0.6em;
+    color: #00bb00;
+    text-align: center;
+}
+
+.errors{
+    font-weight: bold;
+    font-family: Georgia Serif;
+    font-size: 0.6em;
+    color: #cc0000;
+    text-align: left;
+}
+
+.messages_wrapper{
+    margin: 0px auto;
+    width: 240px;
+    margin-right:28px;
+}
+
+textarea{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family: Courier;
+    resize: none;
+}
+
+#new_post_area{
+    margin: 0px auto;
+    width: 230px;
+    background-color: #aaaaaa;
+    padding: 10px;
+    height: 175px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+
+#message_post_submit{
+    float: right;
+    padding: 1px 20px;
+}
+
+#posts_display_wrapper{
+    padding: 5px;
+}
+
+.posts_display_whole_post{
+    margin-bottom: 40px;
+}
+
+.posts_display_text{ 
+    border: 1px solid #aaaaaa;
+    border-radius: 1px;
+    clear: both;
+    padding: 5px;
+    background-color: #dddddd;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 450px){
+    
+    body{
+        padding: 0px;
+        background-color: #ffffff;
+        font-size: 15px;
+    }
+
+    #container{
+        width: 75%;
+        background: white;
+        box-shadow: none;
+        border-radius: 2px;
+        margin: 0px auto;
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    #container_login{
+        width: 75%;
+        background: white;
+        box-shadow: none;
+        border-radius: 2px;
+        max-width: none;
+        margin-top: 40px;
+    }
+
+
+    .login_wrapper{
+        margin: 0px auto;
+        max-width: none;
+    }
+
+    .errors{
+        font-size: 0.7em;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .sign_up_success{
+        font-size: 0.7em;
+    }
+
+}
+
